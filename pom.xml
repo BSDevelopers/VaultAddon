@@ -72,13 +72,13 @@
         <dependency>
             <groupId>simplepets.brainsynder</groupId>
             <artifactId>API</artifactId>
-            <version>5.0 (build 1000)</version>
+            <version>5.0-BUILD-17</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>lib.brainsynder</groupId>
             <artifactId>API</artifactId>
-            <version>B1031</version>
+            <version>B78</version>
         </dependency>
         <dependency>
             <groupId>net.milkbowl.vault</groupId>

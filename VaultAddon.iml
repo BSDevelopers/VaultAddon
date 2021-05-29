@@ -24,8 +24,8 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.google.code.gson:gson:2.8.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: net.md-5:bungeecord-chat:1.16-R0.4" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.yaml:snakeyaml:1.27" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: simplepets.brainsynder:API:5.0 (build 1000)" level="project" />
-    <orderEntry type="library" name="Maven: lib.brainsynder:API:B1031" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: simplepets.brainsynder:API:5.0-BUILD-17" level="project" />
+    <orderEntry type="library" name="Maven: lib.brainsynder:API:B78" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: net.milkbowl.vault:Vault:1.6.6" level="project" />
   </component>
 </module>
