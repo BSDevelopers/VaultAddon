@@ -7,6 +7,7 @@ import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import simplepets.brainsynder.addon.presets.EconomyAddon;
 import simplepets.brainsynder.api.Namespace;
+import simplepets.brainsynder.api.plugin.SimplePets;
 
 import java.util.List;
 import java.util.UUID;
@@ -19,8 +20,8 @@ public class VaultAddon extends EconomyAddon {
     public boolean shouldEnable() {
         Plugin plugin = Bukkit.getPluginManager().getPlugin("Vault");
         if ((plugin != null) && plugin.isEnabled()) return true;
-        System.out.println("[SimplePets VaultAddon] You seem to be missing the Vault plugin...");
-        System.out.println("[SimplePets VaultAddon] Download it here: https://www.spigotmc.org/resources/34315/");
+        SimplePets.getDebugLogger().debug(SimplePets.ADDON, "[SimplePets VaultAddon] You seem to be missing the Vault plugin...");
+        SimplePets.getDebugLogger().debug(SimplePets.ADDON, "[SimplePets VaultAddon] Download it here: https://www.spigotmc.org/resources/34315/");
         return false;
     }
 
@@ -55,7 +56,7 @@ public class VaultAddon extends EconomyAddon {
 
     @Override
     public double getVersion() {
-        return 0.1;
+        return 0.2;
     }
 
     @Override
