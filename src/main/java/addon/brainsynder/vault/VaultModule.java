@@ -1,27 +1,25 @@
 package addon.brainsynder.vault;
 
-import com.google.common.collect.Lists;
 import net.milkbowl.vault.economy.Economy;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.RegisteredServiceProvider;
-import simplepets.brainsynder.addon.presets.EconomyAddon;
+import simplepets.brainsynder.addon.presets.EconomyModule;
 import simplepets.brainsynder.api.Namespace;
 import simplepets.brainsynder.api.plugin.SimplePets;
 
-import java.util.List;
 import java.util.UUID;
 
 @Namespace(namespace = "Vault")
-public class VaultAddon extends EconomyAddon {
+public class VaultModule extends EconomyModule {
     private Economy econ = null;
 
     @Override
     public boolean shouldEnable() {
         Plugin plugin = Bukkit.getPluginManager().getPlugin("Vault");
         if ((plugin != null) && plugin.isEnabled()) return true;
-        SimplePets.getDebugLogger().debug(SimplePets.ADDON, "[SimplePets VaultAddon] You seem to be missing the Vault plugin...");
-        SimplePets.getDebugLogger().debug(SimplePets.ADDON, "[SimplePets VaultAddon] Download it here: https://www.spigotmc.org/resources/34315/");
+        SimplePets.getDebugLogger().debug(SimplePets.ADDON, "You seem to be missing the Vault plugin...");
+        SimplePets.getDebugLogger().debug(SimplePets.ADDON, "Download it here: https://www.spigotmc.org/resources/34315/");
         return false;
     }
 
@@ -52,23 +50,5 @@ public class VaultAddon extends EconomyAddon {
     public void cleanup() {
         super.cleanup();
         econ = null;
-    }
-
-    @Override
-    public double getVersion() {
-        return 0.2;
-    }
-
-    @Override
-    public String getAuthor() {
-        return "brainsynder";
-    }
-
-    @Override
-    public List<String> getDescription() {
-        return Lists.newArrayList(
-                "&7This addon links into the Vault Plugin",
-                "&7To make it possible to buy pets with in-game money"
-        );
     }
 }

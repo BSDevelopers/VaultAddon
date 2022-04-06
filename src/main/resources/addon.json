@@ -1,0 +1,12 @@
+{
+  "name": "VaultAddon",
+  "author": "brainsynder",
+
+  "version": 0.3,
+  "supported-build": 163,
+
+  "description": [
+    "&7This addon links into the Vault Plugin",
+    "&7To make it possible to buy pets with in-game money"
+  ]
+}
