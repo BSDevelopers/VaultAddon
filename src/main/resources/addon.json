@@ -8,5 +8,12 @@
   "description": [
     "&7This addon links into the Vault Plugin",
     "&7To make it possible to buy pets with in-game money"
+  ],
+
+  "plugin-support": [
+    {
+      "name": "Vault",
+      "url": "https://www.spigotmc.org/resources/34315/"
+    }
   ]
 }
